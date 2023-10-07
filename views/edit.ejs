@@ -1,0 +1,16 @@
+<%-  include("relation/header")    -%>
+<h1>Edit</h1>
+<form action="/edit" method="post">
+    <div>
+        <label name="textLabel">Title</label>
+        <textarea  name="textInput" id="textInput" autocomplete="off" rows="1" class="form-control"><%= post.title %></textarea>
+    </div>
+    <div>
+        <label name="postLabel">Post</label>
+        <textarea name="postInput" id="postInput" class="form-control" wrap="hard" rows="3"><%= post.content %></textarea>
+    </div>
+    <button class="btn btn-success" style="margin-top: 10px;" type="submit">Done</button>
+    <input type="hidden" name="id" id="id" value="<%= post._id %>">
+</form>
+
+<%-  include("relation/footer")    -%>

@@ -1,0 +1,14 @@
+<%- include("relation/header") -%>
+        <h1>
+            <%= post.title %>
+        </h1>
+        <p>
+            <%= post.content %>
+        </p>
+        <form action="/update" method="post">
+        <div>
+                <button class="btn btn-success" name="edit" value="<%= post._id %>" type="submit">Edit</button>
+                <button class="btn btn-danger" name="delete" value="<%= post._id %>" type="submit">DELETE</button>
+        </div>
+        </form>
+            <%- include("relation/footer") -%>

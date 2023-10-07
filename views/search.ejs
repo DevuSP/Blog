@@ -1,0 +1,14 @@
+<%-  include("relation/header")    -%>
+<h1>Search</h1>
+<p>Here you can search your blog by its title name.</p>
+<form action="/search" method="post">
+    <div>
+        <label name="textLabel">Title</label>
+        <input  name="title" autocomplete="off" type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary" type="submit">Search</button>
+</form>
+
+
+
+<%-   include("relation/footer")    -%>

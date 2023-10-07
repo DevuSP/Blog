@@ -1,0 +1,17 @@
+<%- include("relation/header") -%>
+
+<h1>Compose</h1>
+    <form action="/compose" method="post">
+        <div>
+            <label name="textLabel">Title</label>
+            <input  name="textInput" autocomplete="off" type="text" class="form-control">
+        </div>
+        <div>
+            <label name="postLabel">Post</label>
+            <textarea name="postInput" class="form-control" wrap="hard" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Publish</button>
+    </form>
+
+
+    <%- include("relation/footer") -%>
